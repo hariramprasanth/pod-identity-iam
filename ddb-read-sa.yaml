@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: ddb-read-sa
+  namespace: default
+  annotations:
+   eks.amazonaws.com/role-arn: arn:aws:iam::160071257600:role/ddb-read-only-role
